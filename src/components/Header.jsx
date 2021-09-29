@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Header.css";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -7,8 +8,8 @@ const Header = () => {
       <div style={{display: "flex", alignItems: "center"}}>
       <h1 className="Header_title">Bookstore CMS</h1>
       <nav className="Header_nav">
-          <a style={{marginRight:"30px"}}href="" className="Header_link">Books</a>
-        <a href="" className="Header_link">Categories</a>
+          <Link to="/" style={{marginRight:"30px"}} className="Header_link">Books</Link>
+        <Link to="/Categories" className="Header_link">Categories</Link>
         </nav>
       </div>
       <div className="Header_avatar"></div>
