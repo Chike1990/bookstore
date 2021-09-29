@@ -1,11 +1,7 @@
 import React from 'react';
 
-const books = () => {
-  return (
-    <div>
-      
-    </div>
-  );
-};
+const books = () => (
+  <div />
+);
 
 export default books;
