@@ -1,8 +1,8 @@
-import Book from "./Book";
 import { useState } from "react";
+import Book from "./Book";
 
 const Books = () => {
-  const [books, setBook] = useState ([
+  const [books] = useState([
     {
       title: "The one man show",
       category: "action",
