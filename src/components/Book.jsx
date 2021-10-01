@@ -5,7 +5,7 @@ import { removeBookAsync } from '../redux/books/books';
 const Book = ({ title, author, category, item_id }) => {
   const dispatch = useDispatch()
   return (
-    <div>
+    <div className="">
       <p>{title}</p>
       <p>{author}</p>
       <p>{category}</p>
