@@ -1,31 +1,27 @@
-import {useDispatch} from "react-redux"
-import { useState } from "react";
+import {useDispatch, useSelector} from "react-redux"
+import { useState, useEffect } from "react";
 import {v4 as id} from "uuid";
 import Book from "./Book";
-import { addBook, removeBook} from "../redux/books/books"
+import { addBookAsync} from "../redux/books/books"
 
 const Books = () => {
-  console.log(id)
   const dispatch = useDispatch();
+  const books = useSelector(state => state.books)
   const [title, setTitle] = useState("")
   const [category, setCategory] = useState("")
-  const [books] = useState([
-    {
-      title: "The one man show",
-      category: "action",
-      author: "Kenneth Jefferson",
-    },
-    {
-      title: "The one man show",
-      category: "action",
-      author: "Kenneth Jefferson",
-    },
-  ]);
+
+  // For generating api key
+  // useEffect(() => {
+  //   axios.post("https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps")
+  //   .then(res => console.log(res))
+  // }, [])
+
   return (
     <div>
-      {books.map((book) => (
+      {books.length > 0 ?
+        books.map((book) => (
         <Book {...book} />
-      ))}
+      )): (<p>There are no books</p>)}
       <div>
         <p>ADD NEW BOOK</p>
         <input type="text" placeholder="Book title" onChange={(e) => setTitle(e.target.value)} />
@@ -36,7 +32,7 @@ const Books = () => {
           <option value="Romance">Romance</option>
           <option value="Renaisance">Renaisance</option>
         </select>
-        <button onClick={() => dispatch(addBook({id: id(), title, category}))}>ADD BOOK</button>
+        <button onClick={() => dispatch(addBookAsync({item_id: id(), title, category}))}>ADD BOOK</button>
       </div>
       </div>
   );
