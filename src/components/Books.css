@@ -1,0 +1,31 @@
+.Books_form {
+  max-width: 700px;
+  margin: 0 auto;
+  
+}
+
+.Books_form-input {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+
+}
+
+.Books_input {
+  flex: 1;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 1rem;
+}
+
+.Books_select {
+  margin-right: 1rem;
+}
+
+.Books_btn {
+  padding: 0 10px;
+  font-size: .8rem;
+  background-color: #4386bf;
+  color: #fff;
+  border: none;
+}

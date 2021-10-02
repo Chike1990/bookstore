@@ -1,6 +1,9 @@
 /* stylelint-disable font-family-no-missing-generic-family-keyword */
 
 .Header {
+  display: flex;
+  justify-content: left;
+  /* align-content: flex-start; */
   background-color: #fff;
   height: 70px;
   line-height: 70px;

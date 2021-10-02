@@ -1,0 +1,80 @@
+.Book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 700px;
+  background-color: #fff;
+  margin: 0 auto 15px auto;
+  padding: 15px 25px;
+}
+
+.Book_spinner {
+}
+
+.circle {
+  stroke: #4386bf;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 2;
+}
+
+.circular-chart {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+
+.Book_category{
+  color: #121212;
+}
+
+.Book_category, .Book_author {
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.Book_author {
+  color: #4386bf;
+  margin-bottom: 10px;
+}
+
+.Book_action-btn {
+  color: #a8a3a3;
+  cursor: pointer;
+}
+
+.Book_update-progress {
+  background-color: #4386bf;
+  color: #eee;
+  font-size: .8rem;
+  margin-top: 7px;
+  padding: 10px 25px;
+}
+
+.Book_action-btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.Book_title {
+  margin: 6px 0;
+  font-family: RobotoSlab;
+  font-size: 1rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+}

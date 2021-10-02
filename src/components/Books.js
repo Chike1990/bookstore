@@ -9,6 +9,8 @@ import {
   addBookAsync,
 } from '../redux/books/books';
 
+import './Books.css';
+
 const Books = () => {
   const dispatch = useDispatch();
   const books = useSelector((state) => state.books);
@@ -21,17 +23,20 @@ const Books = () => {
         ? books.map((book) => (
           <Book {...book} />
         )) : (<p>There are no books</p>)}
-      <div>
-        <p>ADD NEW BOOK</p>
-        <input type="text" placeholder="Book title" onChange={(e) => setTitle(e.target.value)} />
-        <select name="" id="" onChange={(e) => setCategory(e.target.value)}>
-          <option value="">--Select Category--</option>
-          <option value="Fiction">Fiction</option>
-          <option value="Action">Action</option>
-          <option value="Romance">Romance</option>
-          <option value="Renaisance">Renaisance</option>
-        </select>
-        <button type="button" onClick={() => dispatch(addBookAsync({ item_id: id(), title, category }))}>ADD BOOK</button>
+      <div className="Books_form">
+        <p style={{ marginTop: '' }}>ADD NEW BOOK</p>
+        <div className="Books_form-input">
+
+          <input className="Books_input" type="text" placeholder="Book title" onChange={(e) => setTitle(e.target.value)} />
+          <select className="Books_select" name="" id="" onChange={(e) => setCategory(e.target.value)}>
+            <option value="">--Select Category--</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Action">Action</option>
+            <option value="Romance">Romance</option>
+            <option value="Renaisance">Renaisance</option>
+          </select>
+          <button className="Books_btn" type="button" onClick={() => dispatch(addBookAsync({ item_id: id(), title, category }))}>ADD BOOK</button>
+        </div>
       </div>
     </div>
   );
