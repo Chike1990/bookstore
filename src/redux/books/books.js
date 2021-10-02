@@ -6,7 +6,6 @@ const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 
 const API_KEY = 'G5gGyLBmqrL0XfYsIJnI';
 const api = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/${API_KEY}/`;
-
 const initialState = books;
 
 const addBook = (payload) => ({
