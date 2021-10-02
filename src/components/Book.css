@@ -8,9 +8,6 @@
   padding: 15px 25px;
 }
 
-.Book_spinner {
-}
-
 .circle {
   stroke: #4386bf;
   fill: none;
@@ -30,13 +27,14 @@
   height: 60px;
 }
 
-.Book_category{
+.Book_category {
   color: #121212;
 }
 
-.Book_category, .Book_author {
+.Book_category,
+.Book_author {
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, sans-serif;
   font-size: 0.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -58,7 +56,7 @@
 .Book_update-progress {
   background-color: #4386bf;
   color: #eee;
-  font-size: .8rem;
+  font-size: 0.8rem;
   margin-top: 7px;
   padding: 10px 25px;
 }
@@ -69,7 +67,7 @@
 
 .Book_title {
   margin: 6px 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, Arial, sans-serif;
   font-size: 1rem;
   font-weight: bold;
   font-stretch: normal;
