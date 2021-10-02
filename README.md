@@ -1,8 +1,8 @@
 # Bookstore App
 The Bookstore App is an app built with React.
 
-![Screenshot](src/Screenshot.PNG)
-![Screenshot](src/Screenshot2.PNG)
+![Screenshot](src/Screenshot1.png)
+
 ## Built With
 
 - HTML, CSS, JavaScript, React, and Webpack;
