@@ -5,7 +5,6 @@ import Book from "./Book";
 import { addBook, removeBook} from "../redux/books/books"
 
 const Books = () => {
-  console.log(id)
   const dispatch = useDispatch();
   const [title, setTitle] = useState("")
   const [category, setCategory] = useState("")
@@ -28,8 +27,9 @@ const Books = () => {
       ))}
       <div>
         <p>ADD NEW BOOK</p>
-        <input type="text" placeholder="Book title" onChange={(e) => setTitle(e.target.value)} />
-        <select name="" id="" onChange={(e) => setCategory(e.target.value)}>
+        <form>
+          <input type="text" placeholder="Book title" onChange={(e) => setTitle(e.target.value)} />
+          <select name="" id="" onChange={(e) => setCategory(e.target.value)}>
           <option value="">--Select Category--</option>
           <option value="Fiction">Fiction</option>
           <option value="Action">Action</option>
@@ -37,6 +37,7 @@ const Books = () => {
           <option value="Renaisance">Renaisance</option>
         </select>
         <button onClick={() => dispatch(addBook({id: id(), title, category}))}>ADD BOOK</button>
+        </form>
       </div>
       </div>
   );
