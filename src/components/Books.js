@@ -31,7 +31,7 @@ const Books = () => {
           <option value="Romance">Romance</option>
           <option value="Renaisance">Renaisance</option>
         </select>
-        <button type="button" onClick={() => dispatch(addBookAsync({ itemId: id(), title, category }))}>ADD BOOK</button>
+        <button type="button" onClick={() => dispatch(addBookAsync({ item_id: id(), title, category }))}>ADD BOOK</button>
       </div>
     </div>
   );
