@@ -1,5 +1,5 @@
 .Books_form {
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -17,13 +17,17 @@
 }
 
 .Books_select {
+  flex: 0.7;
+  height: 40px;
+  line-height: 40px;
   margin-right: 1rem;
+  
 }
 
 .Books_btn {
   padding: 0 10px;
   font-size: 0.8rem;
-  background-color: #4386bf;
+  background-color: #1d8ff3;
   color: #fff;
   border: none;
 }

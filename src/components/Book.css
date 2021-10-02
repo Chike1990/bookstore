@@ -2,14 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 700px;
+  max-width: 900px;
   background-color: #fff;
   margin: 0 auto 15px auto;
   padding: 15px 25px;
 }
 
 .circle {
-  stroke: #4386bf;
+  stroke: #1d8ff3;
   fill: none;
   stroke-width: 2;
   stroke-linecap: round;
@@ -44,17 +44,23 @@
 }
 
 .Book_author {
-  color: #4386bf;
+  color: #1d8ff3;
   margin-bottom: 10px;
 }
 
 .Book_action-btn {
   color: #a8a3a3;
   cursor: pointer;
+  border-right: 1px solid #bbb;
+  padding-right: 10px;
+}
+
+.Book_action-btn:last-child {
+  border-right: none;
 }
 
 .Book_update-progress {
-  background-color: #4386bf;
+  background-color: #1d8ff3;
   color: #eee;
   font-size: 0.8rem;
   margin-top: 7px;

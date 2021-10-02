@@ -1,15 +1,35 @@
 /* stylelint-disable font-family-no-missing-generic-family-keyword */
 
-.Header {
-  display: flex;
-
-  /* justify-content: left; */
+.Header_wrapper {
   background-color: #fff;
   height: 70px;
   line-height: 70px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.Header {
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #e8e8e8;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.Header_profile {
+  border: 1px solid #dcdde0;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.HeaderStyle {
+  display: flex;
+  align-items: center;
+  flex: 1;
 }
 
 .Header_title {
@@ -22,6 +42,15 @@
   letter-spacing: normal;
   color: #0290ff;
   margin-right: 20px;
+}
+
+.Header_link{
+  text-decoration: none;
+  color: the color;
+}
+
+.Header_icon {
+  fill: #1d8ff3;
 }
 
 .Header_avatar {

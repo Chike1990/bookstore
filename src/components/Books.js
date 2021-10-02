@@ -29,7 +29,7 @@ const Books = () => {
 
           <input className="Books_input" type="text" placeholder="Book title" onChange={(e) => setTitle(e.target.value)} />
           <select className="Books_select" name="" id="" onChange={(e) => setCategory(e.target.value)}>
-            <option value="">--Select Category--</option>
+            <option value="">Action</option>
             <option value="Fiction">Fiction</option>
             <option value="Action">Action</option>
             <option value="Romance">Romance</option>
