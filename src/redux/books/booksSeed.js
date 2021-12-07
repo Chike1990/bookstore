@@ -26,7 +26,7 @@ const books = [
   },
   {
     author: 'Unknown',
-    title: 'One Thousand and One Nights',
+    title: 'One Thousand Nights',
     itemId: '1200',
   },
   {
@@ -46,7 +46,7 @@ const books = [
   },
   {
     author: 'Samuel Beckett',
-    title: 'Molloy, Malone Dies, The Unnamable, the trilogy',
+    title: 'Molloy,the trilogy',
     itemId: '1952',
   },
 ];

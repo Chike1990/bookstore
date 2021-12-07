@@ -1,0 +1,84 @@
+.Book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  background-color: #fff;
+  margin: 0 auto 15px auto;
+  padding: 15px 25px;
+}
+
+.circle {
+  stroke: #1d8ff3;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 2;
+}
+
+.circular-chart {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+
+.Book_category {
+  color: #121212;
+}
+
+.Book_category,
+.Book_author {
+  opacity: 0.5;
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.Book_author {
+  color: #1d8ff3;
+  margin-bottom: 10px;
+}
+
+.Book_action-btn {
+  color: #a8a3a3;
+  cursor: pointer;
+  border-right: 1px solid #bbb;
+  padding-right: 10px;
+}
+
+.Book_action-btn:last-child {
+  border-right: none;
+}
+
+.Book_update-progress {
+  background-color: #1d8ff3;
+  color: #eee;
+  font-size: 0.8rem;
+  margin-top: 7px;
+  padding: 10px 25px;
+}
+
+.Book_action-btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.Book_title {
+  margin: 6px 0;
+  font-family: RobotoSlab, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
