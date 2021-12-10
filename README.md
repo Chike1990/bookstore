@@ -1,5 +1,5 @@
 # Bookstore App
-The Bookstore App is an app built with React. In this milestone, I connected the book application to an existing API to create and remove books in a remote server. I also styled the application. 
+The Bookstore App is an app built with React. In this milestone, I configured the Redux Store and write actions and reducer for adding and removing books; connected the book application to an existing API to create and remove books in a remote server. I also styled the application. 
 
 ![Screenshot](src/Screenshot1.png)
 
