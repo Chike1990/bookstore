@@ -1,5 +1,5 @@
 # Bookstore App
-The Bookstore App is an app built with React.
+The Bookstore App is an app built with React. In this milestone, I connected the book application to an existing API to create and remove books in a remote server. I also styled the application. 
 
 ![Screenshot](src/Screenshot1.png)
 
