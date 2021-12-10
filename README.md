@@ -1,5 +1,5 @@
 # Bookstore App
-The Bookstore App is an app built with React.
+The Bookstore App is an app built with React. In this milestone, I configured the Redux Store and write actions and reducer for adding and removing books; connected the book application to an existing API to create and remove books in a remote server. I also styled the application. 
 
 ![Screenshot](src/Screenshot1.png)
 
@@ -32,9 +32,6 @@ $ cd dist
 - the `$ cd` command is used to move to different folders.<br>
 - while `$ npm run build` is used to compile the aplication files.</small>
 </details>
-
-### Live Server
-Optionally, you can run the application [here]() or [here]().
 
 ## Author
 
